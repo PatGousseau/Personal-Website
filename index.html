@@ -40,7 +40,7 @@
 				<!-- Two -->
 				<!-- Thumb is second -->
 					<section id="two">
-						<h2>Projects</h2>
+						<h1>Projects</h1>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/JohnHaidtAnalysis.png" class="image fit thumb"><img src="images/fulls/JohnHaidtAnalysis.png" alt="" /></a>
@@ -76,22 +76,52 @@
 					</section>
 
 						<section id="two">
-						<h2>Research</h2>
-						<div class="row">
+						<h1>Research</h1>
+						<!-- <div class="row"> -->
 							<!-- <article class="col-6 col-12-xsmall work-item"> -->
 								
 								<h3>Automatic Task Switch Detection</h3>
-								<div class="col-12"><span class="image fit"><img src="images/fulls/Task_Detection.png" alt="" /></span></div>
-								<p> This project uses Natural Language Processing (NLP) and Word2Vec to automatically detect task switches in real-time. This project is a feature on Personal Analytics, a productivity application initiated by the University of Zurich. This project was completed under the supervision of Dr. Gail C. Murphy, University of British Columbia, and Dr. Thomas Fritz, University of Zurich.</p> <br>
 
-								<p>The following is a screenshot of the visualization of the program:</p>
+								<h4>Overview</h4>
+								
+								<p> This project uses Natural Language Processing (NLP) and Word2Vec to automatically detect task switches in real-time. This project is a feature on Personal Analytics, a productivity application initiated by the University of Zurich. This project was completed under the supervision of Dr. Gail C. Murphy, University of British Columbia, and Dr. Thomas Fritz, University of Zurich.</p> 
 
-								<p>As you hover over the timeline, it displays the time at which the task began and ended as well as the duration and the tokens that represent the task worked on.</p>
+								<p>The program detects when a knowledge worker switches from one task to another during a work day. It also recognizes when a task has been repeated. The following is a screenshot of the visualization of the program:</p>
 
+								
+								<div class="col-12"><span class="image fit"><img src="images/fulls/Widget.png" alt="" /></span></div>
+								<p>As you hover over the timeline, it displays the time at which the task began and ended as well as the duration and the tokens that represent the task worked on. In the above screenshot, I'm hovering my mouse over the larger dark purple task and can easily determine that from 13:44 to 13:58 I was reading the microsoft documentation for the DateTime Struct. Note that tasks of the same colour represents the same task.</p>
+								<h4>Description of Algorithm</h4>
+
+								<p>
+									
+									<ol>
+										<li>Fetch the window titles used within the last two minutes - through empirical data, two minutes was found to yeild the most accurate results</li>
+										<li>Reduce noise and create bag of words by tokenizing, stemming, removing stop words and non-English words</li>
+										<li>Remove insignificant words</li>
+										<li>Create a vector representation of the bag of words</li>
+										<li>Apply cosine similarity to determine if it is the same task as the preceding task. Collapse into one task if so, otherwise create a 
+										new task and check if this task has been worked on earlier</li>
+										
+									</ol>
+								</p>
+								<h4>Possible Applications</h4>
+
+																	
+								<p>
+									
+									<ul>
+										<li>Help with filling out timesheets / automatically filling out timesheets</li>
+										<li>Automatically check off items on a to-do list based on the tasks detected</li>
+										<li>User may analyze their productivity over the course of a day</li>
+
+										
+									</ul>
+								</p>
 								
 
 
-						</div>
+						<!-- </div> -->
 
 					</section>
 
@@ -164,7 +194,7 @@
 
 				<!-- Four -->
 				
-					<section id="four">
+<!-- 					<section id="four">
 													<header>
 								<h4>Heading with a Subtitle</h4>
 								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
@@ -481,7 +511,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
 						</section>
 
-					</section>
+					</section> -->
 				
 
 		<!-- 	</div> -->
